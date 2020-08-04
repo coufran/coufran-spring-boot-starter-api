@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.coufran.springboot.starter.api.config.SpringWebMvcConfig
