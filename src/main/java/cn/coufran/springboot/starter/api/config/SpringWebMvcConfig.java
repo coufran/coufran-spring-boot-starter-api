@@ -1,7 +1,6 @@
 package cn.coufran.springboot.starter.api.config;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
@@ -18,7 +17,7 @@ import java.util.List;
  * @version 1.0.0
  */
 @Configuration
-@Import(ServiceExceptionHandler.class)
+@Import({ServiceExceptionHandler.class, ResponseHandler.class})
 public class SpringWebMvcConfig implements WebMvcConfigurer {
 
     /**
